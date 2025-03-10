@@ -1,0 +1,148 @@
+*{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+header {
+    background-color: white;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.logo img{
+    padding-top: 2px;
+    padding-left: 3px;
+    height: 50px;
+    width: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li a.active {
+    text-decoration: underline;
+}
+.slider{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+.slides{
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+.slide{
+    min-width: 100%;
+
+}
+.slide img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+
+    width: auto;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+button.prev{
+    left: 10px;
+}
+button.next{
+    right: 10px;
+}
+.prev:hover , .next:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.dots{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dot.active{
+    background-color: red;
+}
+.slider-section {
+    width: 1440px;
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+.slider-section button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.slider-section button:hover {
+    background-color: white;
+    border: 1px solid red;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}

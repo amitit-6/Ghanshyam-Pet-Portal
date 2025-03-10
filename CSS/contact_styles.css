@@ -1,0 +1,100 @@
+*{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+header {
+    background-color: white;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.logo img{
+    padding-top: 2px;
+    padding-left: 3px;
+    height: 50px;
+    width: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li a.active {
+    text-decoration: underline;
+}
+.contact-section {
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.contact-section h1 {
+    color: red;
+}
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-section form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.contact-section form input,
+.contact-section form textarea {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-section form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.contact-section form button:hover {
+    background-color: #ccc;
+}
+footer {  
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
